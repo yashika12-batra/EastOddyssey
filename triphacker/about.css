@@ -1,0 +1,515 @@
+/*navbar*/
+.top .brand{
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.top{
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s ease;
+  height: 40px;
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.nav{
+  position: relative;
+  justify-content: center;
+
+}
+
+.nav .nav-items a{
+  position: relative;
+  color: white;
+  font-size: 1 em;
+  font-weight: 500;
+  font-family: "Poppins",sans-serif;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s ease;
+  padding: 11px 14px;
+
+}
+
+.nav .nav-items a:before{
+  content: '';
+  position: absolute;
+  background: white;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+
+ .nav .nav-items a:hover:before{
+  width: 100%;
+}
+a.active {
+            background-color: black;
+        }
+
+  /*content */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+.column {
+
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  overflow-wrap: break-word;
+  
+}
+
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: white;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: #4d4d4d;
+  height:250px;
+  background-image: url("about4.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.about-section h1 {
+  margin-top: 40px;
+
+}
+
+.card>img {
+  border-radius: 50%;
+  padding-left:120px;
+  padding-right:120px;
+}
+
+.container {
+  padding: 0 16px;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  
+}
+
+
+
+#contact {
+  width: 100%;
+  margin-top: 50px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  color: #fff;
+
+
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+/* Begin Left Contact Page */
+.form-horizontal {
+  float: left;
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+
+}
+
+.form-control{
+    display: block;
+    background-color: #000;
+    margin: 10px;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  }
+
+textarea.form-control {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  width: 400px;
+  height:150px;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin: 10px;
+  margin-top: 15px;
+  height: 30px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.banner{
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.8);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 760px) {
+  .direct-contact-container, .form-horizontal {
+    float: none;
+    margin: 10px auto;
+  }  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .nav{
+      display: none;
+      justify-content: center;
+    }
+     a.active {
+            background-color: #fff;
+        }
+
+     .nav.active{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(1, 1, 1, 0.5);
+    }
+
+     .nav .nav-items a{
+      color: #222;
+      font-size: 1.2em;
+      margin: 20px;
+    }
+
+     .nav .nav-items a:before{
+      background: #222;
+      height: 5px;
+    }
+
+     .nav.active .nav-items{
+      background: #fff;
+      width: 600px;
+      max-width: 600px;
+      margin: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn{
+      background-image:url(m.jpg.svg);
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: 5% 95%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .menu-btn.active{
+      z-index: 999;
+      background-image: url(close.jpg.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      transition: 0.3s ease;
+    }
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .img {
+    width:10%;
+  }
+
+}

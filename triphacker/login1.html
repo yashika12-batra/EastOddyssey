@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>EastOdyssey</title>
+
+        <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+        <link rel="stylesheet" href="login1.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon7.png" type="image/x-icon">  
+    </head>
+    <body>
+      
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form class="form" id="form">
+                        <div class="form-control">
+                        <input  class="input-box" placeholder="Your Email Id" id="loginEmail" autofocus>  
+                        <small> Error Msg </small>  </div> 
+                        <div class="form-control">  
+                        <input type="password" class="input-box" placeholder="Password" id="loginPw" >
+                        <small> Error Msg </small>   </div>
+                        <input type="checkbox" onclick="myFunction()" ><span>Show Password</span> 
+   
+                        <button type="submit" class="submit-button" onclick="ValidateUser()">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    <button type="button" class="btn" onclick="openRegister()">Sign Up</button>
+                    <a href="">Forgot Password</a>
+                </div>
+
+                <div class="card-back">
+                    <h2>SIGN UP</h2>
+                    <form id="form2">
+                        <div class="form-control">
+                        <input type="text" class="input-box" placeholder="Your Name" id="name" >
+                        <small> Error Msg </small>
+                       </div><div class="form-control">
+                        <input  class="input-box" placeholder="Your Email Id" id="email"> 
+                        <small> Error Msg </small></div>
+                        <div class="form-control">
+                        <input type="password" class="input-box" placeholder="Password" id="pw">
+                        <small> Error Msg </small> </div>
+                        <button type="submit" class="submit-btn" onclick="ValidateUser()">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick='openLogin()'>Login</button>
+                    <a href ='about.html'>Join Us</a>
+                    
+                </div>
+            </div>
+            </div>
+
+        </div>
+       <script src="login.js"> </script>
+      
+
+
+
+    </body>
+</html>

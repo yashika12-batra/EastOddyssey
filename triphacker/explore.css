@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+/* navbar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+    
+}
+
+.top .brand{
+  color: rgb(5, 5, 5);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.top{
+  z-index: 999;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+transition: 0.5s ease;
+height: 40px;
+margin-bottom: 5px;
+background: #2696E9;
+}
+
+
+.nav{
+  position: relative;
+  justify-content: center;
+}
+
+.nav .nav-items a{
+  position: relative;
+  color: rgb(15, 15, 15);
+  font-size: 1 em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s ease;
+
+}
+
+.nav .nav-items a:before{
+  content: '';
+  position: absolute;
+  background: rgb(15, 15, 15);
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+
+ .nav .nav-items a:hover:before{
+  width: 100%;
+}
+
+
+@media (max-width: 1040px){
+  
+  
+   
+     .nav{
+      display: none;
+      justify-content: center;
+    }
+
+     .nav.active{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(1, 1, 1, 0.5);
+    }
+
+     .nav .nav-items a{
+      color: #222;
+      font-size: 1.2em;
+      margin: 20px;
+    }
+
+     .nav .nav-items a:before{
+      background: #222;
+      height: 5px;
+    }
+
+     .nav.active .nav-items{
+      background: #fff;
+      width: 600px;
+      max-width: 600px;
+      margin: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn{
+        background-image:url(m.jpg.svg);
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: 5% 95%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .menu-btn.active{
+      z-index: 999;
+      background-image: url(close.jpg.svg);
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center;
+      transition: 0.3s ease;
+    }
+
+
+
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900');
+*{
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+body {background-color: #e1e1e1; margin-top: 50px;font-family: 'Montserrat', sans-serif; font-weight: 400;}
+p {
+    color: #969696;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 3vh;
+    
+}
+h1, h2, h3, h4 {
+    color: #262a2e;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.col-xs-12 {
+  width: 100%;
+  margin-top: 15vh;
+}
+
+.packagesList {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    min-height: 270px;
+}
+.packagesList .media-left {
+    float: left;
+    padding-right: 10px;
+    width: auto;
+}
+/* .packagesList .media-left img {
+    width: 100%;
+} */
+.packagesList .media-body {
+    padding: 30px 30px 0 20px;
+}
+.packagesList .media-body {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+.bodyLeft, .bodyRight {
+    width: 70%;
+}
+h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.media-heading a {
+    color: #262a2e;
+}
+.packagesList .media-body .countryRating span {
+    border-right: 1px solid #dedede;
+    color: #969696;
+    display: inline-block;
+    /* float: left; */
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+
+.bodyLeft p {
+    font-size: 14px;
+}
+.packagesList .media-body .detailsBtn {
+    top: 200px;
+}
+.packagesList .media-body .detailsBtn {
+    float: left;
+    left: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    position: absolute;
+    top: 200px;
+}
+.detailsBtn li {
+    padding: 0;
+}
+.textInfo {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    color: #969696;
+    display: block;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    margin-top: 2vh;
+    padding: 0 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in 0s;
+}
+.textInfo:hover{
+  background: #000;
+  color: #fff;
+}
+.bookingDetails {
+    background-color: #2696E9;
+    border-radius: 6px;
+    display: block;
+    min-height: 210px;
+    padding: 25px 55px 15px;
+    text-align: center;
+    width: 100%;
+}
+.bodyLeft, .bodyRight {
+    display: inline-block;
+    /* float: left; */
+    width: 70%;
+}
+.bodyLeft, .bodyRight {
+    width: 70%;
+}
+.bodyRight {
+    width: 28%;
+}
+.bodyRight {
+    float: right;
+}
+.bookingDetails h2 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.bookingDetails p {
+    color: #ffffff;
+}
+.buttonTransparent{
+    border-color: #ffffff;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all 0.3s ease-in 0s;
+}
+.buttonTransparent:hover{
+  background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ff891e;
+}
+@media (max-width: 767px) {
+.countUpSection .counter {
+  font-size: 32px;
+}
+}
+
+@media (min-width: 768px) {
+.countUpSection .counter {
+  font-size: 52px;
+}
+}
+.countUpSection h5 {
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+.countUpSection h5 {
+  font-size: 13px;
+}
+}
+
+@media (min-width: 768px) {
+.countUpSection h5 {
+  font-size: 15px;
+}
+}
+.packagesList {
+  background-color: #ffffff;
+  min-height: 270px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+.packagesList .media-left {
+  float: left;
+  /* width: 100%; */
+  padding-right: 0;
+}
+}
+
+@media (min-width: 768px) {
+.packagesList .media-left {
+  float: left;
+  /* width: 100%; */
+  padding-right: 0;
+}
+}
+
+@media (min-width: 992px) {
+.packagesList .media-left {
+  float: left;
+  width: auto;
+  padding-right: 10px;
+}
+}
+/* .packagesList .media-left img {
+  width: 100%;
+} */
+.packagesList .media-body {
+  position: relative;
+  height: 100%;
+  overflow: visible;
+}
+
+@media (max-width: 767px) {
+.packagesList .media-body {
+  padding: 30px;
+}
+.bodyLeft, .bodyRight {
+  width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+.packagesList .media-body {
+  padding: 30px 30px 0 20px;
+}
+}
+.packagesList .media-body .detailsBtn {
+  float: left;
+  margin-left: 0;
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+.packagesList .media-body .detailsBtn {
+  position: relative;
+  left: auto;
+  top: auto;
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 768px) {
+.packagesList .media-body .detailsBtn {
+  top: 180px;
+}
+}
+
+@media (min-width: 992px) {
+.packagesList .media-body .detailsBtn {
+  top: 210px;
+}
+}
+@media (min-width: 992px) {
+.bodyRight {
+  width: 38%;
+}
+.bodyLeft {
+  width: 60%;
+}
+}
+
+@media (min-width: 1200px) {
+.packagesList .media-body .detailsBtn {
+  top: 200px;
+}
+}
+.modal-content {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ff891e currentcolor;
+    border-image: none;
+    border-style: solid none;
+    border-width: 8px medium;
+}
+.buttonCustomPrimary {
+    background-color: #ff891e;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    height: 45px;
+    line-height: 45px;
+    text-transform: uppercase;
+  padding: 0 20px;
+}
+.modal-body .form-group .form-control {
+    background-color: whitesmoke;
+    border-color: #e5e5e5;
+    box-shadow: none;
+    color: #969696;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    height: 45px;
+}
+
+.media-object{
+  height: 270px;
+  width: 380px;
+}
+
+/*calender/*

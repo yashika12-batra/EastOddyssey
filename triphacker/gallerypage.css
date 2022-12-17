@@ -1,0 +1,279 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    }
+    
+    .container{
+        width : 100%;
+        height: 100vh;
+         background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0, 0.0)),url(northeastindia.jpg);
+         background-position: center;
+         background-size: cover;
+         padding-right: 8%;
+         padding-left: 8%;
+         box-sizing: border-box;
+    }
+    /*
+    .navbar{
+        height: 8.5%;
+        display: flex;
+        align-items: center;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 100px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color:blanchedalmond;
+        font-size: 13px;
+    }*/
+    .top .brand{
+        color: white;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      
+      .top{
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s ease;
+        height: 40px;
+        margin-bottom: 5px;
+        background: rgba(0, 0, 0, 0.5);
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+      
+      
+      .nav{
+        position: relative;
+        justify-content: center;
+      
+      }
+      
+      .nav .nav-items a{
+        position: relative;
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: "Poppins",sans-serif;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: 0.3s ease;
+        padding: 11px 14px;
+      
+      }
+      
+      .nav .nav-items a:before{
+        content: '';
+        position: absolute;
+        background: white;
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease;
+      }
+      
+      
+       .nav .nav-items a:hover:before{
+        width: 100%;
+      }
+      a.active {
+                  background-color: black;
+              }
+              
+    .row{
+        display: flex ;
+        height: 88%;
+        align-items: center;
+    }
+    .col{
+        flex-basis: 50%;
+        padding-left: 8%;
+    }
+    .adjust {
+        padding-top: 10vh;
+       box-sizing: border-box;
+    }
+    p{
+        color:white;
+        font-size: 20px;
+        line-height: 25px; 
+        padding-bottom: 30vh;  
+        margin-top: 30%;
+       }
+    h5{
+     color: black;
+     font-size: 20px; 
+    }
+    .card{
+        width: 40%;
+        height: 18vh;
+        display: inline-block;
+       border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.3s;
+        color:black;
+    }
+    
+    .card1{
+        background-image: url("mizoram.png");
+    }
+    .card2{
+        background-image: url("MEGHALAYA.jpg");
+    }
+    
+    .card3{
+        background-image: url("NAGALAND.jpg");
+        
+    }
+    
+    .card4{
+        background-image: url("Ap.jpg");
+        
+    }
+    
+    .card5{
+        background-image: url("tripura.jpg");
+        
+    }
+    
+    .card6{
+        background-image: url("assam.jpg");
+    }
+    .card7{
+        background-image: url("manipur.jpg");
+        
+    }
+    .card8{
+        background-image: url("sikkim.jfif"); 
+    }
+    .card:hover{
+        transform: translateY(-15px);
+    }
+    @media (max-width: 1040px){
+        .nav{
+         display: none;
+         justify-content: center;
+       }
+       a.active {
+               background-color: #fff;
+           }
+   
+        .nav.active{
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         top: 0;
+         left: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: rgba(1, 1, 1, 0.5);
+       }
+   
+        .nav .nav-items a{
+         color: #222;
+         font-size: 1.2em;
+         margin: 20px;
+       }
+   
+        .nav .nav-items a:before{
+         background: #222;
+         height: 5px;
+       }
+   
+        .nav.active .nav-items{
+         background: #fff;
+         width: 600px;
+         max-width: 600px;
+         margin: 20px;
+         padding: 40px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border-radius: 5px;
+         box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+       }
+   
+       .menu-btn{
+         background-image:url(m.jpg.svg);
+         background-repeat: no-repeat;
+         background-size: 30px;
+         background-position: 5% 95%;
+         width: 30px;
+         height: 30px;
+         cursor: pointer;
+         transition: 0.3s ease;
+       }
+   
+       .menu-btn.active{
+         z-index: 999;
+         background-image: url(close.jpg.svg);
+         background-repeat: no-repeat;
+         background-size: auto;
+         background-position: center;
+         transition: 0.3s ease;
+       }
+    }
+    .description {
+        font-size: 1.1em; 
+        line-height: 2.3vw; 
+        text-align: justify; 
+        padding-bottom: 0px; 
+        margin-top: 0px;
+       }
+       .gallery-text {
+        font-size: 1.5vw;
+        text-align: center;
+        margin-top: 1vh;
+        color: black
+       }
+
+       @media screen and (max-width: 769px) {
+        .card{
+            width: 38%;
+        }
+        .description{
+            font-size: 1.1em; 
+            line-height: 2.4vh;
+        }
+        .gallery-text{
+            font-size: 1.2vw
+        }
+        
+       }
+       @media screen and (max-width: 426px) {
+        .card{
+            width: 50%;
+            height: 12vw;
+        }
+        .description{
+            font-size: 0.7em; 
+            line-height:1.5vh;
+        }
+        .gallery-text{
+            font-size: 1.4vw
+        }
+    }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon7.png" type="image/x-icon">  
+    
+    <title>EastOdyssey</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <a href="#" class="brand">EastOdyssey</a>
+        <div class="menu-btn" >
+            
+            
+         </div>
+        <div class="nav">
+            <div class="nav-items">
+
+                <a href="login1.html">Login</a>
+                <a class='active' href="#">Home</a>
+                <a href="gallerypage.html" >Gallery</a>
+                <a href="explore.html">Explore</a>
+                <a href="review.html">Review</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+
+        <video class="video-slide active" src="main.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="5.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="6.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="7.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="8.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+
+
+
+
+        <div class="content active">
+            <h1>Explore The <br><span>Glorious Octet</span></h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Northeast_India">Read More</a>    
+        </div>
+
+        <div class="content">
+            <h1>Arunachal<br><span>Pradesh</span></h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Arunachal_Pradesh">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Assam</h1>
+           
+            <a href="https://en.wikipedia.org/wiki/Assam">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Manipur</h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Manipur">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Meghalaya</h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Meghalaya">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Mizoram</h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Mizoram">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Nagaland</h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Nagaland">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Sikkim</h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Sikkim">Read More</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Tripura</h1>
+            
+            <a href="https://en.wikipedia.org/wiki/Tripura">Read More</a> 
+
+        </div>
+
+
+
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+          </div>
+        
+    </section>
+    
+
+
+
+
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".nav");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+
+
+
+     //Javacript for video slider navigation
+     const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+
+
+        
+    </script>
+    
+
+
+        </body>
+</html>
